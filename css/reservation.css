@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+background: linear-gradient(to right, #fffaf3, #fdebd0);
+}
+header{
+    text-align: center;
+    color: #5c4b51;
+   margin-top: 20px;
+}
+.contianer{
+    width: 500px;
+   border: 3px solid #fdebd0;
+box-shadow: 8px 8px 8px #fdebd0;
+height: 600px;
+display: block;
+margin: 20px auto ;
+color:#5c4b51;
+
+}
+.name-of-person{
+    width:450px;
+    padding: 10px 5px 10px;
+    background-color:#fffaf3;
+}
+.contianer2{
+   text-align: center;
+   margin-top: 20px;
+}
+
+.name-of-person button{
+    background-color:#5c4b51;
+    padding:10px 15px;
+    margin-top: 25px;
+color:#5c4b51;
+   border-radius: 10px;
+}
+.name-of-person button:hover{
+      background-color:#5c4b51;
+}
+#name-of-reserver{
+    padding: 10px;
+    border-radius: 7px;
+    width: 40%;
+}
+#date-of-reserving{
+    padding: 8px;
+    border-radius: 5px;
+}
+#time-of-reserving{
+    padding: 8px;
+    border-radius: 5px;
+}
+#email-of-reserver{
+     padding: 10px;
+    border-radius: 7px;
+    width: 40%;
+}
+#phone-of-reserver{
+   padding: 10px;
+    border-radius: 7px;
+    width: 40%;
+}
+.grid-gallery-spot{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+   margin-top: 50px;
+margin-right: -6%;
+margin-left: 4%;
+}
+.grid-gallery-spot img{
+    width: 100%;
+    border-radius: 4px;
+}
+#grid2 img{
+    margin-top: 60px;
+    width: 490px;
+    margin-left: -8%;
+ 
+}
+.back-grid{
+    width: 400px;
+}
+.footer-content{
+    width: 100%;
+    background-color: #5c4b51;
+}
