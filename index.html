@@ -24,7 +24,7 @@
         </nav>
     </header>
 
-    <section class="header-wrapper">
+    <section class="header-wrapper reveal">
         <div class="text1">
             <h2>When The Sun Meets Your Morning Coffee</h2>
         </div>
@@ -34,51 +34,100 @@
     </section>
   
     <main id="menu-content">
-        <div class="menu-place">
+        <div class="menu-place reveal">
             <h1>Our Exquisite Menu</h1>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="juice">Juices</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+            </div>
         </div>
         
-        <section class="menu-category">
-            <div class="menu-item">
-                <article class="drink1">
+        <div class="menu-grid">
+            <section class="menu-category reveal" data-category="coffee">
+                <div class="menu-item-card">
                     <img src="images/macchiato.jpg" alt="Rich Caramel Macchiato">
-                    <h3>Macchiato</h3>
-                    <p>Signature espresso layered with velvety foam.</p>
-                </article>
-                <article class="drink2">
+                    <div class="item-info">
+                        <h3>Macchiato</h3>
+                        <p>Signature espresso layered with velvety foam.</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="coffee">
                     <img src="images/iced-coffee.jpg" alt="Cold Brew Iced Coffee">
-                    <h3>Iced Coffee</h3>
-                    <p>Smooth cold brew served over crystal clear ice.</p>
-                </article>
-                <article class="drink2">
+                    <div class="item-info">
+                        <h3>Iced Coffee</h3>
+                        <p>Smooth cold brew served over crystal clear ice.</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                </div>
+                <div class="menu-item-card" data-category="coffee">
                     <img src="images/buna.jpg" alt="Traditional Buna Coffee">
-                    <h3>Traditional Buna</h3>
-                    <p>Experience the authentic heart of coffee culture.</p>
-                </article>
-            </div>
-        </section>
+                    <div class="item-info">
+                        <h3>Traditional Buna</h3>
+                        <p>Experience the authentic heart of coffee culture.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+            </section>
 
-        <section class="juices">
-            <div class="juice-conetent">
-                <article class="juice1">
+            <section class="menu-category reveal" data-category="juice">
+                <div class="menu-item-card">
                     <img src="images/pineapple-juice.jpg" alt="Sweet Pineapple Juice">
-                    <h3>Pineapple Gold</h3>
-                    <p>Pure tropical sunlight in every sip.</p>
-                </article>
-                <article class="juice2">
+                    <div class="item-info">
+                        <h3>Pineapple Gold</h3>
+                        <p>Pure tropical sunlight in every sip.</p>
+                        <span class="price">$6.00</span>
+                    </div>
+                </div>
+                <div class="menu-item-card">
                     <img src="images/avocado-juice.jpg" alt="Creamy Avocado Juice">
-                    <h3>Creamy Avocado</h3>
-                    <p>Rich, nutritious, and perfectly blended.</p>
-                </article>
-                <article class="juice3">
+                    <div class="item-info">
+                        <h3>Creamy Avocado</h3>
+                        <p>Rich, nutritious, and perfectly blended.</p>
+                        <span class="price">$7.00</span>
+                    </div>
+                </div>
+                <div class="menu-item-card">
                     <img src="images/mango-juice.jpg" alt="Lush Mango Juice">
-                    <h3>Mango Lush</h3>
-                    <p>Ripe summer mangoes, freshly squeezed.</p>
-                </article>
-            </div>
-        </section>
+                    <div class="item-info">
+                        <h3>Mango Lush</h3>
+                        <p>Ripe summer mangoes, freshly squeezed.</p>
+                        <span class="price">$6.00</span>
+                    </div>
+                </div>
+            </section>
 
-        <section class="gallery">
+            <section class="menu-category reveal" data-category="food">
+                <div class="menu-item-card">
+                    <img src="images/pasta-1.jpg" alt="Artisan Pasta">
+                    <div class="item-info">
+                        <h3>Signature Pasta</h3>
+                        <p>Homemade noodles with our secret house sauce.</p>
+                        <span class="price">$14.00</span>
+                    </div>
+                </div>
+                <div class="menu-item-card">
+                    <img src="images/pasta-2.jpg" alt="Savory Home-style Pasta">
+                    <div class="item-info">
+                        <h3>Garden Pasta</h3>
+                        <p>Fresh seasonal vegetables with olive oil and garlic.</p>
+                        <span class="price">$12.50</span>
+                    </div>
+                </div>
+                <div class="menu-item-card">
+                    <img src="images/pasta-3.jpg" alt="Signature Seafood Pasta">
+                    <div class="item-info">
+                        <h3>Seafood Alfredo</h3>
+                        <p>Rich creamy sauce with fresh catch of the day.</p>
+                        <span class="price">$16.00</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="gallery reveal">
             <div class="gallery-content">
                 <div class="food-content">
                     <div class="food1">
@@ -94,7 +143,7 @@
             </div>
         </section>
 
-        <section class="about-us-little">
+        <section class="about-us-little reveal">
             <div class="third-section">
                 <div class="overlay-text">
                     <h3>Our Craft</h3>
