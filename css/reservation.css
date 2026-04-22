@@ -1,87 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
-background: linear-gradient(to right, #fffaf3, #fdebd0);
+:root {
+    --primary: #461c09;
+    --accent: #ffa733;
+    --accent-hover: #e6952e;
+    --bg-warm: #fff8f0;
+    --bg-white: #ffffff;
+    --text-dark: #2c1810;
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
 }
-header{
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-warm);
+    color: var(--text-dark);
+    padding-top: 100px;
+}
+
+header {
     text-align: center;
-    color: #5c4b51;
-   margin-top: 20px;
-}
-.contianer{
-    width: 500px;
-   border: 3px solid #fdebd0;
-box-shadow: 8px 8px 8px #fdebd0;
-height: 600px;
-display: block;
-margin: 20px auto ;
-color:#5c4b51;
-
-}
-.name-of-person{
-    width:450px;
-    padding: 10px 5px 10px;
-    background-color:#fffaf3;
-}
-.contianer2{
-   text-align: center;
-   margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-.name-of-person button{
-    background-color:#5c4b51;
-    padding:10px 15px;
-    margin-top: 25px;
-color:#5c4b51;
-   border-radius: 10px;
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--primary);
 }
-.name-of-person button:hover{
-      background-color:#5c4b51;
+
+/* --- Form Design --- */
+.container {
+    max-width: 600px;
+    margin: 0 auto 100px;
+    background: var(--bg-white);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
 }
-#name-of-reserver{
-    padding: 10px;
-    border-radius: 7px;
-    width: 40%;
+
+.name-of-person {
+    margin-bottom: 25px;
+    background: transparent;
 }
-#date-of-reserving{
-    padding: 8px;
-    border-radius: 5px;
+
+input {
+    width: 100% !important;
+    padding: 15px 20px !important;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: #f9f9f9;
 }
-#time-of-reserving{
-    padding: 8px;
-    border-radius: 5px;
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(255, 167, 51, 0.1);
 }
-#email-of-reserver{
-     padding: 10px;
-    border-radius: 7px;
-    width: 40%;
+
+button#sub {
+    width: 100%;
+    padding: 18px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
 }
-#phone-of-reserver{
-   padding: 10px;
-    border-radius: 7px;
-    width: 40%;
+
+button#sub:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.grid-gallery-spot{
+
+/* --- Gallery Section --- */
+.grid-gallery-spot {
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-   margin-top: 50px;
-margin-right: -6%;
-margin-left: 4%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 5%;
+    margin-bottom: 100px;
 }
-.grid-gallery-spot img{
+
+.grid-gallery-spot img {
     width: 100%;
-    border-radius: 4px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: var(--transition);
 }
-#grid2 img{
-    margin-top: 60px;
-    width: 490px;
-    margin-left: -8%;
- 
+
+.grid-gallery-spot img:hover {
+    transform: scale(1.02);
 }
-.back-grid{
-    width: 400px;
+
+/* --- Footer --- */
+footer {
+    background: var(--primary);
+    padding: 80px 5%;
+    text-align: center;
+    color: white;
 }
-.footer-content{
-    width: 100%;
-    background-color: #5c4b51;
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.socials a:hover {
+    opacity: 1;
+    color: var(--accent);
 }

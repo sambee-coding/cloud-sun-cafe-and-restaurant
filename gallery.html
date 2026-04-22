@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Cloud Sun Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .gallery-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 50px 5%;
+        }
+        .gallery-page-grid div {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 400px;
+        }
+        .gallery-page-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            transition: var(--transition);
+        }
+        .gallery-page-grid img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="cafe-name">
+            <h1>Cloud Sun</h1>
+        </div>
+        <nav class="nav-bar"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html" style="color: var(--accent);">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 150px; text-align: center;">
+        <h1 style="font-size: 3rem; margin-bottom: 20px;">Visual Sanctuary</h1>
+        <p style="color: var(--text-light);">A glimpse into the warmth and craftsmanship of Cloud Sun</p>
+        
+        <div class="gallery-page-grid">
+            <div><img src="images/interior-1.jpg" alt="Dining Area"></div>
+            <div><img src="images/interior-2.jpg" alt="Artisan Bar"></div>
+            <div><img src="images/interior-3.jpg" alt="Cozy Corner"></div>
+            <div><img src="images/macchiato.jpg" alt="Coffee Craft"></div>
+            <div><img src="images/pineapple-juice.jpg" alt="Fresh Juices"></div>
+            <div><img src="images/pasta-1.jpg" alt="Delicious Food"></div>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <h2>Visit More</h2>
+        <div class="contents">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

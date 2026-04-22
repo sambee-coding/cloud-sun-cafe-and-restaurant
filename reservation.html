@@ -3,56 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reserve Your Table | Cloud Sun Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reservation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-       <header>
-        <h1>Welcome To The Reservation spot</h1>
+    <header id="header">
+        <div id="cafe-name">
+            <h1>Cloud Sun</h1>
+        </div>
+        <nav class="nav-bar"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="contianer">
-        <div class="contianer2">
-<div class="name-of-person">
-    <input type="text" placeholder="Name" required id="nameOfReserver">
-</div>
-<div class="name-of-person">
-    <input type="date" placeholder="" required id="dateOfReserving">
-        <input type="time" id="time-of-reserving">
-</div>
-<div class="name-of-person">
-    <input type="text" placeholder="Email" required id="email-of-reserver">
-</div>
-<div class="name-of-person">
-    <input type="text" placeholder="Phone" required id="phone-of-reserver">
-</div>
-<div class="name-of-person">
-   <button id="sub">Reserve</button>
-</div>
-</div>
-</section>
-<section class="grid-gallery-spot">
-    <div class="back-grid">
-        <img src="images/krisjanis-kazaks-BeRFg1Iisa0-unsplash.jpg" alt="">
-    </div>
-     <div class="grid1" id="grid2">
-        <img src="images/pramod-tiwari-ne6GPFpzoBs-unsplash.jpg" alt="">
-    </div>
-     <div class="back-grid">
-        <img src="images/mike-aeng-M4CA7aHzjjo-unsplash.jpg" alt="">
-    </div>
-</section>
-<footer>
-    <div class="footer-content">
-        <h2>cloud sun cafe</h2>
-        <p>Thank you for choosing us for your reservation. we look forward to erving you and making your experience memorable.</p>
-        <ul class="socials">
-            <li><a href="">Instagram</a></li>
-             <li><a href="">Facebook</a></li>
-              <li><a href="">Telegram</a></li>
-               <li><a href="">Twitter</a></li>
-        </ul>
-    </div>
-</footer>
-<script src="js/form-validiation.js"></script>
+
+    <header class="page-title">
+        <h1>Reserve Your Spot</h1>
+        <p>Join us for an unforgettable experience</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="reservation-form">
+                <div class="name-of-person">
+                    <label for="nameOfReserver">Full Name</label>
+                    <input type="text" placeholder="John Doe" required id="nameOfReserver">
+                </div>
+                <div class="name-of-person" style="display: flex; gap: 15px;">
+                    <div style="flex: 1;">
+                        <label for="dateOfReserving">Date</label>
+                        <input type="date" required id="dateOfReserving">
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="time-of-reserving">Time</label>
+                        <input type="time" required id="time-of-reserving">
+                    </div>
+                </div>
+                <div class="name-of-person">
+                    <label for="email-of-reserver">Email Address</label>
+                    <input type="email" placeholder="john@example.com" required id="email-of-reserver">
+                </div>
+                <div class="name-of-person">
+                    <label for="phone-of-reserver">Phone Number</label>
+                    <input type="tel" placeholder="+1 (234) 567-8900" required id="phone-of-reserver">
+                </div>
+                <div class="name-of-person">
+                   <button id="sub">Confirm Reservation</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-gallery-spot">
+            <img src="images/reservation-1.jpg" alt="Cozy Dining Corner">
+            <img src="images/reservation-2.jpg" alt="Artisan Coffee Bar">
+            <img src="images/reservation-3.jpg" alt="Warm Atmosphere">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Cloud Sun Cafe</h2>
+            <p>We look forward to serving you and making your experience memorable.</p>
+            <ul class="socials">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
 </body>
 </html>
