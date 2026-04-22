@@ -417,3 +417,38 @@ footer h2 {
     .gallery-content { flex-direction: column; }
     .overlay-text { position: static; margin-top: 20px; max-width: 100%; }
 }
+
+/* --- Navigation Helpers --- */
+.back-home {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1100;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: var(--transition);
+}
+
+.back-home:hover {
+    background: var(--accent);
+    transform: scale(1.1) rotate(-10deg);
+}
+
+@media (max-width: 768px) {
+    .back-home {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
